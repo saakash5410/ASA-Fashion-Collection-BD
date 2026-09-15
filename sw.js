@@ -1,0 +1,1 @@
+const C='asa-fashion-v3';self.addEventListener('install',e=>e.waitUntil(caches.open(C).then(c=>c.addAll(['./','./index.html','./checkout.html','./admin.html','./manifest.json','./logo.jpg']))));self.addEventListener('fetch',e=>e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request)));

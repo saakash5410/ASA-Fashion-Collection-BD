@@ -1,0 +1,254 @@
+[
+  {
+    "id": 1,
+    "name": "Premium Saree Collection",
+    "category": "শাড়ি",
+    "price": 1250,
+    "oldPrice": 0,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 2,
+    "name": "Elegant Designer Saree",
+    "category": "শাড়ি",
+    "price": 1450,
+    "oldPrice": 0,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 3,
+    "name": "Stylish Three Piece",
+    "category": "থ্রি-পিস",
+    "price": 990,
+    "oldPrice": 0,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 4,
+    "name": "Premium Three Piece",
+    "category": "থ্রি-পিস",
+    "price": 1250,
+    "oldPrice": 0,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 5,
+    "name": "Elegant Burqa",
+    "category": "বোরকা",
+    "price": 1100,
+    "oldPrice": 0,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 6,
+    "name": "Premium Abaya",
+    "category": "আবায়া",
+    "price": 1450,
+    "oldPrice": 0,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 7,
+    "name": "Premium Panjabi",
+    "category": "পাঞ্জাবি",
+    "price": 850,
+    "oldPrice": 0,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 8,
+    "name": "Stylish Panjabi",
+    "category": "পাঞ্জাবি",
+    "price": 1050,
+    "oldPrice": 0,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 9,
+    "name": "Classic Men's Shirt",
+    "category": "শার্ট",
+    "price": 750,
+    "oldPrice": 0,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 10,
+    "name": "Premium Polo Shirt",
+    "category": "পোলো শার্ট",
+    "price": 650,
+    "oldPrice": 0,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 11,
+    "name": "Comfortable T-Shirt",
+    "category": "টি-শার্ট",
+    "price": 450,
+    "oldPrice": 0,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 12,
+    "name": "Men's Jeans",
+    "category": "জিন্স",
+    "price": 950,
+    "oldPrice": 0,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 13,
+    "name": "Formal Pant",
+    "category": "ফরমাল প্যান্ট",
+    "price": 850,
+    "oldPrice": 0,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 14,
+    "name": "Women's Kurti",
+    "category": "কুর্তি",
+    "price": 750,
+    "oldPrice": 0,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 15,
+    "name": "Stylish Gown",
+    "category": "গাউন",
+    "price": 1350,
+    "oldPrice": 0,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 16,
+    "name": "Modern Lehenga",
+    "category": "লেহেঙ্গা",
+    "price": 1850,
+    "oldPrice": 0,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 17,
+    "name": "Premium Hijab",
+    "category": "হিজাব",
+    "price": 350,
+    "oldPrice": 0,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 18,
+    "name": "Baby Dress Set",
+    "category": "বেবি ড্রেস",
+    "price": 650,
+    "oldPrice": 0,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 19,
+    "name": "Girls Frock",
+    "category": "ফ্রক",
+    "price": 750,
+    "oldPrice": 0,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 20,
+    "name": "Kids Panjabi Set",
+    "category": "বাচ্চাদের পাঞ্জাবি",
+    "price": 700,
+    "oldPrice": 0,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 21,
+    "name": "Kids T-Shirt",
+    "category": "বাচ্চাদের টি-শার্ট",
+    "price": 350,
+    "oldPrice": 0,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 22,
+    "name": "Kids Jeans",
+    "category": "বাচ্চাদের জিন্স",
+    "price": 650,
+    "oldPrice": 0,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 23,
+    "name": "Fashion Handbag",
+    "category": "ব্যাগ",
+    "price": 850,
+    "oldPrice": 0,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 24,
+    "name": "Ladies Vanity Bag",
+    "category": "ভ্যানিটি ব্যাগ",
+    "price": 950,
+    "oldPrice": 0,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 25,
+    "name": "Fashion Watch",
+    "category": "ঘড়ি",
+    "price": 650,
+    "oldPrice": 0,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 26,
+    "name": "Stylish Sunglasses",
+    "category": "সানগ্লাস",
+    "price": 450,
+    "oldPrice": 0,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 27,
+    "name": "Fashion Necklace",
+    "category": "নেকলেস",
+    "price": 550,
+    "oldPrice": 0,
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": 28,
+    "name": "Bracelet",
+    "category": "ব্রেসলেট",
+    "price": 350,
+    "oldPrice": 0,
+    "image": "",
+    "description": ""
+  }
+]
