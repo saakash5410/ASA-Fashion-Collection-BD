@@ -1,20 +1,10 @@
 {
-  "name": "ASA Fashion Collection BD",
-  "short_name": "ASA Fashion",
-  "start_url": "./index.html",
-  "display": "standalone",
-  "theme_color": "#8b0038",
-  "background_color": "#f5f5f7",
-  "icons": [
-    {
-      "src": "logo.jpg",
-      "sizes": "192x192",
-      "type": "image/jpeg"
-    },
-    {
-      "src": "logo.jpg",
-      "sizes": "512x512",
-      "type": "image/jpeg"
-    }
-  ]
+  "name":"ASA Fashion Collection BD",
+  "short_name":"ASA Fashion",
+  "start_url":"./index.html",
+  "display":"standalone",
+  "background_color":"#f6f7f9",
+  "theme_color":"#7f0b38",
+  "description":"ASA Fashion Collection BD — fashion shopping with COD and nationwide delivery",
+  "icons":[{"src":"logo.jpg","sizes":"512x512","type":"image/jpeg"}]
 }
