@@ -1,11 +1,16 @@
 {
   "name": "ASA Fashion Collection BD",
   "short_name": "ASA Fashion",
-  "start_url": "./",
+  "start_url": "./index.html",
   "display": "standalone",
-  "theme_color": "#111111",
-  "background_color": "#ffffff",
+  "theme_color": "#8b0038",
+  "background_color": "#f5f5f7",
   "icons": [
+    {
+      "src": "logo.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
     {
       "src": "logo.jpg",
       "sizes": "512x512",
