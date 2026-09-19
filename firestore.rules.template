@@ -1,0 +1,32 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Each signed-in customer can access only their own profile.
+    match /customers/{uid} {
+      allow create: if request.auth != null && request.auth.uid == uid;
+      allow read, update, delete: if request.auth != null && request.auth.uid == uid;
+    }
+
+    // Signed-in customers can create/read/update their own orders.
+    match /orders/{orderId} {
+      allow create: if request.auth != null && request.resource.data.uid == request.auth.uid;
+      allow read, update: if request.auth != null && resource.data.uid == request.auth.uid;
+      allow delete: if false;
+    }
+
+    // IMPORTANT: add your Firebase Admin UID below before enabling admin reads.
+    // Replace YOUR_ADMIN_UID with the UID shown in Authentication > Users.
+    function isAdmin() {
+      return request.auth != null && request.auth.uid == 'YOUR_ADMIN_UID';
+    }
+
+    match /customers/{uid} {
+      allow read: if isAdmin();
+    }
+
+    match /orders/{orderId} {
+      allow read, update, delete: if isAdmin();
+    }
+  }
+}
