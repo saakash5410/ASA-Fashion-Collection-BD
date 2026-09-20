@@ -4,251 +4,307 @@
     "name": "Premium Saree Collection",
     "category": "শাড়ি",
     "price": 1250,
-    "oldPrice": 0,
-    "image": "",
-    "description": ""
+    "oldPrice": 1480,
+    "image": "images/products/product-1.svg",
+    "description": "Premium Saree Collection — ASA Fashion Collection BD-এর demo catalog product.",
+    "sold": 74,
+    "sales": 74
   },
   {
     "id": 2,
     "name": "Elegant Designer Saree",
     "category": "শাড়ি",
     "price": 1450,
-    "oldPrice": 0,
-    "image": "",
-    "description": ""
+    "oldPrice": 1710,
+    "image": "images/products/product-2.svg",
+    "description": "Elegant Designer Saree — ASA Fashion Collection BD-এর demo catalog product.",
+    "sold": 111,
+    "sales": 111
   },
   {
     "id": 3,
     "name": "Stylish Three Piece",
     "category": "থ্রি-পিস",
     "price": 990,
-    "oldPrice": 0,
-    "image": "",
-    "description": ""
+    "oldPrice": 1170,
+    "image": "images/products/product-3.svg",
+    "description": "Stylish Three Piece — ASA Fashion Collection BD-এর demo catalog product.",
+    "sold": 148,
+    "sales": 148
   },
   {
     "id": 4,
     "name": "Premium Three Piece",
     "category": "থ্রি-পিস",
     "price": 1250,
-    "oldPrice": 0,
-    "image": "",
-    "description": ""
+    "oldPrice": 1480,
+    "image": "images/products/product-4.svg",
+    "description": "Premium Three Piece — ASA Fashion Collection BD-এর demo catalog product.",
+    "sold": 185,
+    "sales": 185
   },
   {
     "id": 5,
     "name": "Elegant Burqa",
     "category": "বোরকা",
     "price": 1100,
-    "oldPrice": 0,
-    "image": "",
-    "description": ""
+    "oldPrice": 1300,
+    "image": "images/products/product-5.svg",
+    "description": "Elegant Burqa — ASA Fashion Collection BD-এর demo catalog product.",
+    "sold": 222,
+    "sales": 222
   },
   {
     "id": 6,
     "name": "Premium Abaya",
     "category": "আবায়া",
     "price": 1450,
-    "oldPrice": 0,
-    "image": "",
-    "description": ""
+    "oldPrice": 1710,
+    "image": "images/products/product-6.svg",
+    "description": "Premium Abaya — ASA Fashion Collection BD-এর demo catalog product.",
+    "sold": 259,
+    "sales": 259
   },
   {
     "id": 7,
     "name": "Premium Panjabi",
     "category": "পাঞ্জাবি",
     "price": 850,
-    "oldPrice": 0,
-    "image": "",
-    "description": ""
+    "oldPrice": 1000,
+    "image": "images/products/product-7.svg",
+    "description": "Premium Panjabi — ASA Fashion Collection BD-এর demo catalog product.",
+    "sold": 296,
+    "sales": 296
   },
   {
     "id": 8,
     "name": "Stylish Panjabi",
     "category": "পাঞ্জাবি",
     "price": 1050,
-    "oldPrice": 0,
-    "image": "",
-    "description": ""
+    "oldPrice": 1240,
+    "image": "images/products/product-8.svg",
+    "description": "Stylish Panjabi — ASA Fashion Collection BD-এর demo catalog product.",
+    "sold": 333,
+    "sales": 333
   },
   {
     "id": 9,
     "name": "Classic Men's Shirt",
     "category": "শার্ট",
     "price": 750,
-    "oldPrice": 0,
-    "image": "",
-    "description": ""
+    "oldPrice": 880,
+    "image": "images/products/product-9.svg",
+    "description": "Classic Men's Shirt — ASA Fashion Collection BD-এর demo catalog product.",
+    "sold": 370,
+    "sales": 370
   },
   {
     "id": 10,
     "name": "Premium Polo Shirt",
     "category": "পোলো শার্ট",
     "price": 650,
-    "oldPrice": 0,
-    "image": "",
-    "description": ""
+    "oldPrice": 770,
+    "image": "images/products/product-10.svg",
+    "description": "Premium Polo Shirt — ASA Fashion Collection BD-এর demo catalog product.",
+    "sold": 407,
+    "sales": 407
   },
   {
     "id": 11,
     "name": "Comfortable T-Shirt",
     "category": "টি-শার্ট",
     "price": 450,
-    "oldPrice": 0,
-    "image": "",
-    "description": ""
+    "oldPrice": 530,
+    "image": "images/products/product-11.svg",
+    "description": "Comfortable T-Shirt — ASA Fashion Collection BD-এর demo catalog product.",
+    "sold": 444,
+    "sales": 444
   },
   {
     "id": 12,
     "name": "Men's Jeans",
     "category": "জিন্স",
     "price": 950,
-    "oldPrice": 0,
-    "image": "",
-    "description": ""
+    "oldPrice": 1120,
+    "image": "images/products/product-12.svg",
+    "description": "Men's Jeans — ASA Fashion Collection BD-এর demo catalog product.",
+    "sold": 481,
+    "sales": 481
   },
   {
     "id": 13,
     "name": "Formal Pant",
     "category": "ফরমাল প্যান্ট",
     "price": 850,
-    "oldPrice": 0,
-    "image": "",
-    "description": ""
+    "oldPrice": 1000,
+    "image": "images/products/product-13.svg",
+    "description": "Formal Pant — ASA Fashion Collection BD-এর demo catalog product.",
+    "sold": 518,
+    "sales": 518
   },
   {
     "id": 14,
     "name": "Women's Kurti",
     "category": "কুর্তি",
     "price": 750,
-    "oldPrice": 0,
-    "image": "",
-    "description": ""
+    "oldPrice": 880,
+    "image": "images/products/product-14.svg",
+    "description": "Women's Kurti — ASA Fashion Collection BD-এর demo catalog product.",
+    "sold": 555,
+    "sales": 555
   },
   {
     "id": 15,
     "name": "Stylish Gown",
     "category": "গাউন",
     "price": 1350,
-    "oldPrice": 0,
-    "image": "",
-    "description": ""
+    "oldPrice": 1590,
+    "image": "images/products/product-15.svg",
+    "description": "Stylish Gown — ASA Fashion Collection BD-এর demo catalog product.",
+    "sold": 592,
+    "sales": 592
   },
   {
     "id": 16,
     "name": "Modern Lehenga",
     "category": "লেহেঙ্গা",
     "price": 1850,
-    "oldPrice": 0,
-    "image": "",
-    "description": ""
+    "oldPrice": 2180,
+    "image": "images/products/product-16.svg",
+    "description": "Modern Lehenga — ASA Fashion Collection BD-এর demo catalog product.",
+    "sold": 629,
+    "sales": 629
   },
   {
     "id": 17,
     "name": "Premium Hijab",
     "category": "হিজাব",
     "price": 350,
-    "oldPrice": 0,
-    "image": "",
-    "description": ""
+    "oldPrice": 410,
+    "image": "images/products/product-17.svg",
+    "description": "Premium Hijab — ASA Fashion Collection BD-এর demo catalog product.",
+    "sold": 666,
+    "sales": 666
   },
   {
     "id": 18,
     "name": "Baby Dress Set",
     "category": "বেবি ড্রেস",
     "price": 650,
-    "oldPrice": 0,
-    "image": "",
-    "description": ""
+    "oldPrice": 770,
+    "image": "images/products/product-18.svg",
+    "description": "Baby Dress Set — ASA Fashion Collection BD-এর demo catalog product.",
+    "sold": 703,
+    "sales": 703
   },
   {
     "id": 19,
     "name": "Girls Frock",
     "category": "ফ্রক",
     "price": 750,
-    "oldPrice": 0,
-    "image": "",
-    "description": ""
+    "oldPrice": 880,
+    "image": "images/products/product-19.svg",
+    "description": "Girls Frock — ASA Fashion Collection BD-এর demo catalog product.",
+    "sold": 740,
+    "sales": 740
   },
   {
     "id": 20,
     "name": "Kids Panjabi Set",
     "category": "বাচ্চাদের পাঞ্জাবি",
     "price": 700,
-    "oldPrice": 0,
-    "image": "",
-    "description": ""
+    "oldPrice": 830,
+    "image": "images/products/product-20.svg",
+    "description": "Kids Panjabi Set — ASA Fashion Collection BD-এর demo catalog product.",
+    "sold": 777,
+    "sales": 777
   },
   {
     "id": 21,
     "name": "Kids T-Shirt",
     "category": "বাচ্চাদের টি-শার্ট",
     "price": 350,
-    "oldPrice": 0,
-    "image": "",
-    "description": ""
+    "oldPrice": 410,
+    "image": "images/products/product-21.svg",
+    "description": "Kids T-Shirt — ASA Fashion Collection BD-এর demo catalog product.",
+    "sold": 814,
+    "sales": 814
   },
   {
     "id": 22,
     "name": "Kids Jeans",
     "category": "বাচ্চাদের জিন্স",
     "price": 650,
-    "oldPrice": 0,
-    "image": "",
-    "description": ""
+    "oldPrice": 770,
+    "image": "images/products/product-22.svg",
+    "description": "Kids Jeans — ASA Fashion Collection BD-এর demo catalog product.",
+    "sold": 851,
+    "sales": 851
   },
   {
     "id": 23,
     "name": "Fashion Handbag",
     "category": "ব্যাগ",
     "price": 850,
-    "oldPrice": 0,
-    "image": "",
-    "description": ""
+    "oldPrice": 1000,
+    "image": "images/products/product-23.svg",
+    "description": "Fashion Handbag — ASA Fashion Collection BD-এর demo catalog product.",
+    "sold": 888,
+    "sales": 888
   },
   {
     "id": 24,
     "name": "Ladies Vanity Bag",
     "category": "ভ্যানিটি ব্যাগ",
     "price": 950,
-    "oldPrice": 0,
-    "image": "",
-    "description": ""
+    "oldPrice": 1120,
+    "image": "images/products/product-24.svg",
+    "description": "Ladies Vanity Bag — ASA Fashion Collection BD-এর demo catalog product.",
+    "sold": 925,
+    "sales": 925
   },
   {
     "id": 25,
     "name": "Fashion Watch",
     "category": "ঘড়ি",
     "price": 650,
-    "oldPrice": 0,
-    "image": "",
-    "description": ""
+    "oldPrice": 770,
+    "image": "images/products/product-25.svg",
+    "description": "Fashion Watch — ASA Fashion Collection BD-এর demo catalog product.",
+    "sold": 962,
+    "sales": 962
   },
   {
     "id": 26,
     "name": "Stylish Sunglasses",
     "category": "সানগ্লাস",
     "price": 450,
-    "oldPrice": 0,
-    "image": "",
-    "description": ""
+    "oldPrice": 530,
+    "image": "images/products/product-26.svg",
+    "description": "Stylish Sunglasses — ASA Fashion Collection BD-এর demo catalog product.",
+    "sold": 999,
+    "sales": 999
   },
   {
     "id": 27,
     "name": "Fashion Necklace",
     "category": "নেকলেস",
     "price": 550,
-    "oldPrice": 0,
-    "image": "",
-    "description": ""
+    "oldPrice": 650,
+    "image": "images/products/product-27.svg",
+    "description": "Fashion Necklace — ASA Fashion Collection BD-এর demo catalog product.",
+    "sold": 1036,
+    "sales": 1036
   },
   {
     "id": 28,
     "name": "Bracelet",
     "category": "ব্রেসলেট",
     "price": 350,
-    "oldPrice": 0,
-    "image": "",
-    "description": ""
+    "oldPrice": 410,
+    "image": "images/products/product-28.svg",
+    "description": "Bracelet — ASA Fashion Collection BD-এর demo catalog product.",
+    "sold": 1073,
+    "sales": 1073
   }
 ]
