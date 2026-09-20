@@ -2,36 +2,43 @@ rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
     function isAdmin() {
-      return request.auth != null
-        && request.auth.uid == '7cR26ROOQ5NfberGRom3cHWM3Z73';
+      return request.auth != null && request.auth.uid == '7cR26ROOQ5NfberGRom3cHWM3Z73';
     }
 
+    match /site_settings/public {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+    match /site_pages/public {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+    match /products/{id} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+    match /categories/{id} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
     match /customers/{uid} {
       allow create: if request.auth != null && request.auth.uid == uid;
-      allow read, update, delete: if request.auth != null && request.auth.uid == uid;
-      allow read: if isAdmin();
+      allow read, update, delete: if (request.auth != null && request.auth.uid == uid) || isAdmin();
     }
-
     match /orders/{orderId} {
-      allow create: if request.auth != null
-                    && request.resource.data.uid == request.auth.uid;
-      allow read, update: if request.auth != null && resource.data.uid == request.auth.uid;
-      allow read, update, delete: if isAdmin();
-    }
-
-    match /messages/{messageId} {
-      allow create: if request.auth != null && ((request.resource.data.sender == "customer" && request.resource.data.userId == request.auth.uid) || (isAdmin() && request.resource.data.sender == "admin"));
-      allow read, update: if request.auth != null && (resource.data.userId == request.auth.uid || isAdmin());
+      allow create: if request.auth != null && request.resource.data.uid == request.auth.uid;
+      allow read, update: if (request.auth != null && resource.data.uid == request.auth.uid) || isAdmin();
       allow delete: if isAdmin();
     }
-
+    match /messages/{messageId} {
+      allow create: if (request.auth != null && request.resource.data.sender == 'customer' && request.resource.data.userId == request.auth.uid) || isAdmin();
+      allow read, update: if (request.auth != null && resource.data.userId == request.auth.uid) || isAdmin();
+      allow delete: if isAdmin();
+    }
     match /contact_messages/{messageId} {
-      allow create: if request.resource.data.name is string && request.resource.data.phone is string && request.resource.data.message is string;
+      allow create: if true;
       allow read, update, delete: if isAdmin();
     }
-
-    match /{document=**} {
-      allow read, write: if false;
-    }
+    match /{document=**} { allow read, write: if false; }
   }
 }
