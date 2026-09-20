@@ -12,6 +12,9 @@ const ASA={
  toggleCompare(id){let a=this.compare(),n=Number(id);if(a.includes(n))a=a.filter(x=>x!==n);else if(a.length<4)a.push(n);else return false;localStorage.setItem('asa_compare',JSON.stringify(a));return a.includes(n)},
  refreshBadges(){document.querySelectorAll('[data-cart-count]').forEach(e=>e.textContent=this.count());document.querySelectorAll('[data-wish-count]').forEach(e=>e.textContent=this.wish().length);},
  money(n){return '৳ '+Number(n||0).toLocaleString('en-BD')},
+  getCoupon(){try{return JSON.parse(localStorage.getItem('asa_coupon')||'null')}catch{return null}},
+  applyCoupon(code,subtotal){const c=String(code||'').trim().toUpperCase();const coupons={WELCOME10:{type:'percent',value:10,min:500},SAVE100:{type:'flat',value:100,min:1000},FREESHIP:{type:'shipping',value:1,min:800}};const x=coupons[c];if(!x||subtotal<x.min)return null;const discount=x.type==='percent'?Math.round(subtotal*x.value/100):x.type==='flat'?x.value:0;const out={code:c,discount,freeShipping:x.type==='shipping'};localStorage.setItem('asa_coupon',JSON.stringify(out));return out},
+  clearCoupon(){localStorage.removeItem('asa_coupon')},
  toast(t){let e=document.getElementById('asaToast');if(!e){e=document.createElement('div');e.id='asaToast';e.className='toast';document.body.appendChild(e)}e.textContent=t;e.classList.add('show');clearTimeout(this._t);this._t=setTimeout(()=>e.classList.remove('show'),1800)},
  escape(s){return String(s??'').replace(/[&<>'"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[m]))}
 };
