@@ -103,4 +103,19 @@ async function bootAdminAuth() {
 bootAdminAuth();
 </script>
 
-</body></html>
+<script>
+/* ASA Category Navigation Fix */
+(function(){
+  function goCategory(cat){
+    if(!cat) return;
+    location.href='shop.html?category='+encodeURIComponent(cat);
+  }
+  window.ASA_CATEGORY_GO=goCategory;
+  document.addEventListener('click',function(e){
+    var el=e.target.closest('[data-category],.category-card,.category-item,.cat-card,.category-link');
+    if(!el || el.closest('a[href]')) return;
+    var cat=el.getAttribute('data-category')||el.getAttribute('data-cat')||el.dataset.categoryName||el.textContent.trim();
+    if(cat){e.preventDefault();goCategory(cat);}
+  });
+})();
+</script></body></html>

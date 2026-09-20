@@ -7,4 +7,19 @@ function quick(id){let p=products.find(x=>x.id==id);document.getElementById('qui
 function closeQuick(){document.getElementById('quickModal').classList.remove('show')}
 async function init(){products=await window.ASA_LIVE.products();let cats=[['সব পণ্য','🛍️',''],['শাড়ি','🥻','শাড়ি'],['থ্রি-পিস','👗','থ্রি-পিস'],['বোরকা','🧕','বোরকা'],['পাঞ্জাবি','🧥','পাঞ্জাবি'],['শার্ট','👔','শার্ট'],['বাচ্চাদের পোশাক','🧒','বাচ্চা'],['অ্যাক্সেসরিজ','👜','অ্যাক্সেসরিজ']];document.getElementById('cats').innerHTML=cats.map(x=>`<a class="catCard" href="shop.html?${x[2].length<1?'':'cat='+encodeURIComponent(x[2])}"><div class="catIcon">${x[1]}</div><b>${x[0]}</b></a>`).join('');let deal=products.filter(p=>p.oldPrice&&p.oldPrice>p.price).slice(0,10), nw=products.slice(-10).reverse();document.getElementById('flash').innerHTML=deal.map(card).join('');document.getElementById('new').innerHTML=nw.map(card).join('');for(let [id,g] of [['women','মহিলা'],['men','পুরুষ'],['kids','বাচ্চা'],['acc','অ্যাক্সেসরিজ']])document.getElementById(id).innerHTML=products.filter(p=>group(p.category)==g).slice(0,10).map(card).join('');let end=Date.now()+15*60*60*1000;setInterval(()=>{let d=Math.max(0,end-Date.now()),h=Math.floor(d/36e5),m=Math.floor(d%36e5/6e4),s=Math.floor(d%6e4/1e3);document.getElementById('timer').textContent=`${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`},1000);loadASASettings?.().then(s=>{if(s?.logo)document.getElementById('logo').src=s.logo}).catch(()=>{});}
 let deferredPrompt;window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredPrompt=e;let b=document.getElementById('installBtn');b.style.display='inline-flex';b.onclick=async()=>{await deferredPrompt.prompt();deferredPrompt=null}});init();
+</script><script>
+/* ASA Category Navigation Fix */
+(function(){
+  function goCategory(cat){
+    if(!cat) return;
+    location.href='shop.html?category='+encodeURIComponent(cat);
+  }
+  window.ASA_CATEGORY_GO=goCategory;
+  document.addEventListener('click',function(e){
+    var el=e.target.closest('[data-category],.category-card,.category-item,.cat-card,.category-link');
+    if(!el || el.closest('a[href]')) return;
+    var cat=el.getAttribute('data-category')||el.getAttribute('data-cat')||el.dataset.categoryName||el.textContent.trim();
+    if(cat){e.preventDefault();goCategory(cat);}
+  });
+})();
 </script></body></html>

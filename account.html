@@ -24,4 +24,19 @@ window.saveProfile=async()=>{if(!currentUser)return;const name=$('editName').val
 window.saveAddress=async()=>{if(!currentUser)return;try{await setDoc(doc(db,'customers',currentUser.uid),{address:$('address').value.trim(),postcode:$('postcode').value.trim(),updatedAt:serverTimestamp()},{merge:true});$('addressStatus').textContent=' Saved ✅';}catch(e){$('addressStatus').textContent=' '+e.message}}
 window.changePassword=async()=>{const p=$('newPass').value;if(p.length<6)return alert('Password কমপক্ষে 6 অক্ষরের হতে হবে');try{await updatePassword(currentUser,p);$('securityStatus').textContent=' Password changed ✅';$('newPass').value='';}catch(e){$('securityStatus').textContent=' '+(e.code==='auth/requires-recent-login'?'নিরাপত্তার জন্য আবার Login করে চেষ্টা করুন।':e.message)}}
 window.logout=async()=>{try{await signOut(auth)}finally{localStorage.removeItem('asa_user');location.href='index.html'}};
-</script><script>loadASASettings().then(s=>{document.querySelectorAll('.bottom-nav small').forEach((x,i)=>x.textContent=[s.homeLabel,s.messagesNav,s.cartNav,s.accountNav][i]||x.textContent)})</script></body></html>
+</script><script>loadASASettings().then(s=>{document.querySelectorAll('.bottom-nav small').forEach((x,i)=>x.textContent=[s.homeLabel,s.messagesNav,s.cartNav,s.accountNav][i]||x.textContent)})</script><script>
+/* ASA Category Navigation Fix */
+(function(){
+  function goCategory(cat){
+    if(!cat) return;
+    location.href='shop.html?category='+encodeURIComponent(cat);
+  }
+  window.ASA_CATEGORY_GO=goCategory;
+  document.addEventListener('click',function(e){
+    var el=e.target.closest('[data-category],.category-card,.category-item,.cat-card,.category-link');
+    if(!el || el.closest('a[href]')) return;
+    var cat=el.getAttribute('data-category')||el.getAttribute('data-cat')||el.dataset.categoryName||el.textContent.trim();
+    if(cat){e.preventDefault();goCategory(cat);}
+  });
+})();
+</script></body></html>
