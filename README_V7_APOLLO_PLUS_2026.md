@@ -22,3 +22,12 @@ Enhanced Apollo-inspired fashion ecommerce build. It keeps ASA branding and uses
 
 ## Bangladesh settings
 Dhaka delivery: ৳100; outside Dhaka: ৳250; support: 01626201990.
+
+
+## Apollo/Daraz-inspired 2026 enhancement pass
+- Best Selling and Recommended sections
+- Customer review strip and FAQ shortcuts
+- SEO/OpenGraph/Store structured data
+- Facebook, WhatsApp and phone contact paths
+- Mobile-first navigation, filters, wishlist, compare, COD and PWA retained
+- No third-party copyrighted logos, product images or copied text added
