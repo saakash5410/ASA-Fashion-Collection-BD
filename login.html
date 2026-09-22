@@ -24,4 +24,4 @@ $('submit').onclick=async()=>{try{err('');const email=$('email').value.trim(),pw
 $('google').onclick=async()=>{try{err('');const c=await signInWithPopup(auth,googleProvider);await saveProfile(c.user);localStorage.setItem('asa_user',JSON.stringify({uid:c.user.uid,name:c.user.displayName||'',email:c.user.email||'',phone:''}));location.href='account.html';}catch(e){console.error(e);err('Google Login করা যায়নি: '+e.message)}};
 $('forgot').onclick=async()=>{try{err('');const email=$('email').value.trim();if(!/^\S+@\S+\.\S+$/.test(email))return err('আগে Email লিখুন');await sendPasswordResetEmail(auth,email,{url:'https://saakash5410.github.io/ASA-Fashion-Collection-BD/login.html',handleCodeInApp:false});err('Password reset email পাঠানো হয়েছে। আপনার Email inbox/spam দেখুন।',true);}catch(e){console.error(e);err('Reset email পাঠানো যায়নি: '+e.message)}};
 loadASASettings().then(s=>{document.querySelectorAll('.logo').forEach(x=>x.src=s.logo||x.src)});
-</script><div style="text-align:center;margin:18px 0"><a href="admin.html">Admin Panel</a></div></body></html>
+</script></body></html>
